@@ -55,7 +55,7 @@ header{
 }
 
 .cabeçalho-link a:hover{
-    color: #c8815f;
+    color: aqua;
 }
 
 .Meio{
@@ -69,7 +69,7 @@ header{
 }
 
 .Meio button{
-    background-color: #c8815f;
+    background-color: red;
     padding: 1rem 3rem 1rem 3rem;
     border: none;
     border-radius: 5px;
@@ -150,7 +150,7 @@ section h1{
 }
 
 .text-cta a{
-    background-color: #c8815f;
+    background-color: red;
     padding: 1rem 3rem 1rem 3rem;
     border: none;
     border-radius: 5px;
@@ -166,7 +166,7 @@ section h1{
 
 }
 
-.Container-roupas{
+.Container-carta{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -177,21 +177,21 @@ section h1{
     
 }
 
-.Container-roupas img:hover{
+.Container-carta img:hover{
     transform: scale(0.9) translateY(-5px);
     cursor: pointer;
     transition: 0.3s;
 
 }
 
-.roupa img{
+.carta img{
     width: 250px;
     height: auto;
 }
 
-.roupa{
-    background-color: #c8815f;
-    color: #000;
+.carta{
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .Marcas{
