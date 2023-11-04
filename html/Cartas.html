@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/topnav.css">
     <link rel="stylesheet" href="../css/cartas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/Carrosel.css">
     
     <title>Cartas</title>
 </head>
@@ -40,31 +43,31 @@
         <h1>NOVAS CATEGORIAS</h1>
         <div class="Container-card-1">
             <div class="cards">
-                <img src="img/Luck -1.png">
+                <img src="../imagens/carta/cartaum.jpg">
             </div><!--cards-->
 
             <div class="cards">
-                <img src="img/Luck-2.png">
-            </div><!--cards-->
-        </div><!--Container-card-1-->
-
-        <div class="Container-card-1">
-            <div class="cards">
-                <img src="img/Untitled - 2.png">
-            </div><!--cards-->
-
-            <div class="cards">
-                <img src="img/luck-4.png">
+                <img src="../imagens/carta/cartaum.jpg">
             </div><!--cards-->
         </div><!--Container-card-1-->
 
         <div class="Container-card-1">
             <div class="cards">
-                <img src="img/Untitled-3.png">
+                <img src="../imagens/carta/cartaum.jpg">
             </div><!--cards-->
 
             <div class="cards">
-                <img src="img/Untitled - 1.png">
+                <img src="../imagens/carta/cartaum.jpg">
+            </div><!--cards-->
+        </div><!--Container-card-1-->
+
+        <div class="Container-card-1">
+            <div class="cards">
+                <img src="../imagens/carta/cartaum.jpg">
+            </div><!--cards-->
+
+            <div class="cards">
+                <img src="../imagens/carta/cartaum.jpg">
             </div><!--cards-->
         </div><!--Container-card-1-->
     </section>
@@ -77,45 +80,109 @@
         </div><!--text-cta-->
     </section><!--cta-->
 
-    <section>
-        <h1>ESTOQUE NOVOS</h1>
-        <div class="Container-carta">
-            <div class="carta">
-                 <img src="../imagens/carta/download.jpg" alt="">
-                <p>Lorem Ipsum dizgi</p>
-                <h5>$188</h5>
-                <ion-icon name="cart-outline"></ion-icon>
-            </div><!--carta-->
+    <section class="container">
+        <div class="card__container swiper">
+           <div class="card__content">
+              <div class="swiper-wrapper">
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="../imagens/carta/pokemon.jpg" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Pikachu</h3>
+                       <p class="card__description">
+                          Cartas Pokemon
+                       </p>
+     
+                       <a href="#" class="card__button">Comprar</a>
+                    </div>
+                 </article>
+     
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="../imagens/carta/pokemon.jpg" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Pikachu</h3>
+                       <p class="card__description">
+                         Carta Pokemon
+                       </p>
+     
+                       <a href="#" class="card__button">Comprar</a>
+                    </div>
+                 </article>
+     
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="../imagens/carta/pokemon.jpg" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Pikachu</h3>
+                       <p class="card__description">
+                         Carta Pokemon
+                       </p>
+     
+                       <a href="#" class="card__button">Comprar</a>
+                    </div>
+                 </article>
+     
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="../imagens/carta/pokemon.jpg" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Pikachu</h3>
+                       <p class="card__description">
+                          Carta Pokemon
+                       </p>
+     
+                       <a href="#" class="card__button">Comprar</a>
+                    </div>
+                 </article>
 
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="../imagens/carta/pokemon.jpg" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Pikachu</h3>
+                       <p class="card__description">
+                         Carta Pokemon
+                       </p>
+     
+                       <a href="#" class="card__button">Comprar</a>
+                    </div>
+                 </article>
+              </div>
+           </div>
 
-           <div class="carta">
-            <img src="../imagens/carta/cartaum.jpg" alt="">
-           <p>Lorem Ipsum dizgi</p>
-           <h5>$188</h5>
-           <span><ion-icon name="cart-outline"></ion-icon></span>
-       </div><!--carta-->
+           <!-- Navigation buttons -->
+           <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+           </div>
+           
+           <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+           </div>
 
-       <div class="carta">
-        <img src="../imagens/carta/download.jpg" alt="">
-       <p>Lorem Ipsum dizgi</p>
-       <h5>$188</h5>
-       <ion-icon name="cart-outline"></ion-icon>
-    </div><!--carta-->
+           <!-- Pagination -->
+           <div class="swiper-pagination"></div>
+        </div>
+     </section>
 
-   <div class="carta">
-     <img src="../imagens/carta/download.jpg" alt="">
-    <p>Lorem Ipsum dizgi</p>
-    <h5>$188</h5><ion-icon name="cart-outline"></ion-icon>
-  </div><!--carta-->
- </div><!--container-carta-->
-    </section>
-
-    <div class="Marcas">
-        <img src="../imagens/logo/Brinquedos Estrela Logo PNG Vector (EPS) Free Download.jpg" alt="Marca">
-        <img src="../imagens/logo/Brinquedos Estrela Logo PNG Vector (EPS) Free Download.jpg" alt="Marca">
-    </div><!--Marcas-->
-
-    <section class="Contato" id="Contato">
+    
+        
+        <section class="Contato" id="Contato">
 		<div class="meio-contato">
 			<h3>POKEDEX</h3>
 			<h5>Nós envie uma mensagem</h5>
@@ -128,25 +195,25 @@
 
 		<div class="meio-contato">
 			<h3>Explore</h3>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#featured">Featured</a></li>
-			<li><a href="#new">New</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Cartas.html">Cartas</a></li>
+			<li><a href="QuemSomos.html">QuemSomos</a></li>
+			<li><a href="#contact">Contato</a></li>
 		</div>
 
 		<div class="meio-contato">
-			<h3>Our Services</h3>
-			<li><a href="#">Pricing</a></li>
-			<li><a href="#">Free Shipping</a></li>
-			<li><a href="#">Gift Cards</a></li>
+			<h3>Outros Serviços</h3>
+			<li><a href="#">Novidades</a></li>
+			<li><a href="#">Loja completa</a></li>
+			<li><a href="#">Cartas</a></li>
 		</div>
 
 		<div class="meio-contato">
 			<h3>Shopping</h3>
-			<li><a href="#">Clothing Store</a></li>
-			<li><a href="#">Trending Shoes</a></li>
-			<li><a href="#">Accessories</a></li>
-			<li><a href="#">Sale</a></li>
+			<li><a href="#">Novos Lançamentos</a></li>
+			<li><a href="#">Versões antigas</a></li>
+			<li><a href="#">Accessorios</a></li>
+			<li><a href="#">Pacotes</a></li>
 		</div>
 
 	</section>
@@ -155,9 +222,12 @@
 		<p>Pokemon Company</p>
 	</div>
 
+  <!--=============== SWIPER JS ===============-->
+  <script src="../js/swiper-bundle.min.js"></script>
 
-
-
+  <!--=============== MAIN JS ===============-->
+  <script src="../js/main.js"></script>
 
 </body>
+
 </html>
