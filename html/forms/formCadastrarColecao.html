@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/topnav.css">
+    <link rel="stylesheet" href="../../css/forms/formCadastrar.css">
+
+    <title>Cadastrar Coleção</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">POKEDEX</a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="../index.html">HOME</a></li>
+                <li class="active"><a href="../Cartas.html">Cartas</a></li>
+                <li class="active"><a href="../QuemSomos.html">Quem Somos?</a></li>
+                <li class="active"><a href="#">Infos</a></li>
+                <li class="active"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <img src="../../imagens/icons8-cardápio-32.png" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+    <form autocomplete="off">
+        <div class="flexVertical">
+            <h1>Cadastrar Coleção</h1>
+            <div class="flexHorizontal formBackground">
+
+                <!-- COLUNA ESQUERDA -->
+
+                <div class="flexVertical">
+                    <!--* TEXT | NOME -->
+                    <div class="flexVertical">
+                        <label class="titleInput" for="txtNome">Nome</label>
+                        <input class="formInput" type="text" name="txtNome" id="txtNome">
+                    </div>
+
+                    <!--* SELECT | GERAÇÃO -->
+                    <div class="flexVertical">
+                        <label class="titleInput" for="sltGeracao">Geração</label>
+                        <select class="formInput" name="sltGeracao" id="sltGeracao">
+                            <option value="0" selected hidden>Escolha uma opção...</option>
+                            <option value="1">Primeira Geração</option>
+                            <option value="2">Segunda Geração</option>
+                            <option value="3">Terceira Geração</option>
+                            <option value="4">Quarta Geração</option>
+                            <option value="5">Quinta Geração</option>
+                            <option value="6">Sexta Geração</option>
+                            <option value="7">Sétima Geração</option>
+                            <option value="8">Oitava Geração</option>
+                            <option value="9">Nona Geração</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- COLUNA DIREITA -->
+
+                <div class="flexVertical">
+                    <!--* DATE | LANÇAMENTO -->
+                    <div class="flexVertical">
+                        <label class="titleInput" for="dteLancamento">Lançamento</label>
+                        <input class="formInput" type="date" name="dteLancamento" id="dteLancamento">
+                    </div>
+                    
+                    <!--* BUTTON | SALVAR -->
+                    <div class="flexVertical">
+                        <input class="formInput saveButton" type="button" value="SALVAR">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</body>
+</html>
