@@ -1,0 +1,64 @@
+main {
+    text-align: center;
+}
+
+.flexGenericColumn {
+    display: flex;
+    flex-flow: column nowrap;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.flexGenericRow {
+    display: flex;
+    flex-flow: row nowrap;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box {
+    /* formatação padrão da flexbox */
+    height: 30%;
+    width: 20vw;
+    border-radius: 16px;
+
+    text-align: center;
+}
+
+.box p {
+    font-size: 25pt;
+    font-family: omegaRubyFont;
+}
+
+.box img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.boxAndrey {
+    background-color: rgba(5, 200, 80, 0.65);
+}
+
+.boxHenrique {
+    background-color: rgba(200, 110, 5, 0.65);
+}
+
+.boxBreno {
+    background-color: rgba(5, 100, 200, 0.65);
+}
+
+.boxRangel {
+    background-color: rgba(200, 200, 5, 0.65);
+}
+
+.mapa {
+    border-radius: 15px;
+    width: 80vw;
+}
