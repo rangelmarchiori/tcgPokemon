@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/topnav.css">
+    <link rel="stylesheet" href="../../css/forms/formCadastrar.css">
+
+    <title>Cadastrar Carta</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">POKEDEX</a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="../index.html">HOME</a></li>
+                <li class="active"><a href="../Cartas.html">Cartas</a></li>
+                <li class="active"><a href="../QuemSomos.html">Quem Somos?</a></li>
+                <li class="active"><a href="formRealizarLogin.html">Login</a></li>
+            </ul>
+        </div>
+        <img src="../../imagens/icons8-cardápio-32.png" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+    <form autocomplete="off" method="post" action="../../php/forms/formCadastrarCarta.php" enctype="multipart/form-data">
+        <div class="flexVertical">
+            <h1>Cadastrar Carta</h1>
+            <div class="flexHorizontal formBackground">
+
+                <!-- COLUNA ESQUERDA -->
+
+                <div class="flexVertical">
+                    <!--* TEXT | NOME -->
+                    <div class="flexVertical">
+                        <!-- classe de erro-->
+
+
+                        <label class="titleInput" for="txtNome">Nome</label>
+                        <input class="formInput" type="text" name="txtNome" id="txtNome" required minlength="3"
+                            maxlength="30" data-check-length>
+                    </div>
+
+                    <!--* SELECT | CATEGORIA -->
+                    <div class="flexVertical">
+
+                        <label class="titleInput" for="sltCategoria">Categoria</label>
+                        <select class="formInput" name="sltCategoria" id="sltCategoria" data-required-select>
+                            <option value="0" selected hidden>Escolha uma opção...</option>
+                            <option value="1">Pokémon básico</option>
+                            <option value="2">Pokémon estágio 1</option>
+                            <option value="3">Pokémon estágio 2</option>
+                            <option value="4">Energia</option>
+                            <option value="5">Treinador item</option>
+                            <option value="6">Treinador estádio</option>
+                            <option value="7">Treinador apoiador</option>
+                        </select>
+                    </div>
+
+                    <!--* SELECT | TIPO -->
+                    <div class="flexVertical">
+
+                        <label class="titleInput" for="sltTipo">Tipo</label>
+                        <select class="formInput" name="sltTipo" id="sltTipo" data-required-select>
+                            <option value="0" selected hidden>Escolha uma opção...</option>
+                            <option value="1">Aço</option>
+                            <option value="2">Água</option>
+                            <option value="3">Dragão</option>
+                            <option value="4">Elétrico</option>
+                            <option value="5">Fada</option>
+                            <option value="6">Fogo</option>
+                            <option value="7">Incolor</option>
+                            <option value="8">Lutador</option>
+                            <option value="9">Planta</option>
+                            <option value="10">Psíquico</option>
+                            <option value="11">Sombrio</option>
+                        </select>
+                    </div>
+
+                    <!--* TEXT | RARIDADE -->
+
+                    <div class="flexVertical">
+                        <label class="titleInput" for="txtRaridade">Raridade</label>
+                        <input class="formInput" type="text" name="txtRaridade" id="txtRaridade" required minlength="3"
+                            maxlength="15" data-check-length>
+                    </div>
+
+                    <!--* DATE | LANÇAMENTO -->
+                    <div class="flexVertical">
+                        <label class="titleInput" for="dteLancamento">Lançamento</label>
+                        <input class="formInput" type="date" name="dteLancamento" id="dteLancamento">
+                    </div>
+
+                    <!--* TEXT | IDIOMA -->
+
+                    <div class="flexVertical">
+                        <label class="titleInput" for="txtIdioma">Idioma</label>
+                        <input class="formInput" type="text" name="txtIdioma" id="txtIdioma" minlength="3"
+                            maxlength="20" data-check-length>
+                    </div>
+
+                    <!--* NUMBER | VALOR -->
+
+                    <div class="flexVertical">
+                        <label class="titleInput" for="nbrValor">Valor</label>
+                        <input class="formInput" type="number" name="nbrValor" id="nbrValor" min="1" data-check-length
+                            data-digits-and-special>
+                    </div>
+                </div>
+
+                <!-- COLUNA DIREITA -->
+
+                <div class="flexVertical">
+                    <!--* TEXT | DESCRIÇÃO -->
+
+                    <div class="flexVertical">
+                        <label class="titleInput" for="txtDescricao">Descrição</label>
+                        <input class="formInput" type="text" name="txtDescricao" id="txtDescricao" minlength="3"
+                            data-check-length>
+                    </div>
+
+                    <!--* SELECT | COLEÇÃO -->
+
+                    <div class="flexVertical">
+                        <label class="titleInput" for="sltColecao">Coleção</label>
+                        <select class="formInput" name="sltColecao" id="sltColecao" data-required-select="">
+                            <option value="0" selected hidden>Escolha uma opção...</option>
+                            <option value="1">Coleção X</option>
+                            <option value="2">Coleção Y</option>
+                            <option value="3">Coleção Z</option>
+                        </select>
+                    </div>
+
+                    <!--* TEXT | ILUSTRADOR -->
+
+                    <div class="flexVertical">
+                        <label class="titleInput" for="txtIlustrador">Ilustrador</label>
+                        <input class="formInput" type="text" name="txtIlustrador" id="txtIlustrador" minlength="3"
+                            maxlength="50" data-check-length>
+                    </div>
+
+                    <!--* TEXT | ESTADO -->
+
+                    <div class="flexVertical">
+                        <label class="titleInput" for="txtEstado">Estado</label>
+                        <input class="formInput" type="text" name="txtEstado" id="txtEstado" minlength="3"
+                            maxlength="25" data-check-length>
+                    </div>
+
+                    <!--* UPLOAD | IMAGEM -->
+                    <div class="flexVertical">
+                        <label class="titleInput" for="filImagem">Imagem</label>
+                        <input class="formInput" type="file" name="filImagem" id="filImagem">
+                    </div>
+
+                    <!--* NUMBER | UNIDADE -->
+
+                    <div class="flexVertical">
+                        <label class="titleInput" for="nbrUnidade">Unidade</label>
+                        <input class="formInput" type="number" name="nbrUnidade" id="nbrUnidade" minlength="1"
+                            data-check-length data-only-digits>
+                    </div>
+
+                    <!--* BUTTON | SALVAR -->
+
+                    <div class="flexVertical">
+                        <input class="formInput saveButton" type="submit" value="SALVAR">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</body>
+<script src="../../js/forms/formCadastrarCarta.js"></script>
+</html>

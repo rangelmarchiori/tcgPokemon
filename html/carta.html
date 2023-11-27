@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/carta.css">
+    <link rel="stylesheet" href="../css/topnav.css">
+
+    <title>Carta</title>
+</head>
+
+<body>
+        <nav class="navbar">
+            <a href="#" class="logo" >POKEDEX</a>
+            <div class="nav-links">
+                <ul>
+                    <li class="active"><a href="index.html">HOME</a></li>
+                    <li class="active"><a href="Cartas.html">Cartas</a></li>
+                    <li class="active"><a href="QuemSomos.html">Quem Somos?</a></li>
+                    <li class="active"><a href="forms/formRealizarLogin.html">Login</a></li>
+                </ul>
+            </div>
+            <img src="../imagens/icons8-cardápio-32.png" alt="menu hamburger" class="menu-hamburger">
+        </nav>
+
+
+
+
+        <section class="home">
+            <div class="home-img">
+                <img src="../imagens/carta/ExAmpharos-Frente.png" class="one">
+            </div><!--home-img-->
+    
+            <div class="home-text">
+    
+                <h1>DECK  <br>DE BATALHA EX AMPHAROS</h1>
+                <h5>Cód.:028D848000000SD</h5>
+                <h2>De: R$ 69,99</h2>
+                <h3>POR: R$ 59,49</h3>
+                <a href="#" class="btn">Adicionar ao carrinho</a>
+                
+            </div><!--home-text-->
+        </section><!--home-->
+    
+    
+        <div class="main">
+            <div class="row">
+                <li><img src="../imagens/carta/ExAmpharos-Frente.png" onclick="slider('../imagens/carta/ExAmpharos-Frente.png')"></li>
+            </div><!--row-->
+    
+            <div class="row2">
+                <li><img src="../imagens/carta/ExAmpharos-Foco-Carta.png" onclick="slider('../imagens/carta/ExAmpharos-Foco-Carta.png')"></li>
+            </div><!--row2-->
+    
+            <div class="row3">
+                <li><img src="../imagens/carta/ExAmpharos-Frente-Carta--1-.png" onclick="slider('../imagens/carta/ExAmpharos-Frente-Carta--1-.png')"></li>
+            </div><!--row3-->
+        </div><!--main-->
+    
+    
+    
+    
+    
+         
+      
+        
+        
+ 
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        };
+
+
+       let navbar = document.querySelector ('.navbar');
+
+       menu.onclick = () => {
+        menu.classList.toggle ('bx-x');
+        navbar.classList.toggle ('open');
+       }
+    </script>
+    
+
+    
+</body>
+</html>
