@@ -17,6 +17,7 @@ if($_con === FALSE) {
     $result = mysqli_query($_con, $query);
 
     $rows = mysqli_num_rows($result);
+    mysqli_close($_con);
 
     if($rows == 1){
         session_start();
@@ -27,7 +28,5 @@ if($_con === FALSE) {
     } else {
         echo "<br/> Erro no Login!";
     }
-
-    mysqli_close($_con);
 }
 ?>

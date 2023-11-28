@@ -19,6 +19,10 @@ if($_con === FALSE) {
     '{$data}')";
 
     $result = mysqli_query($_con, $query);
+
     mysqli_close($_con);
+
+    header("Location: ../admin/adminSelecionarCadastro.php");
+	exit();
 }
 ?>

@@ -22,6 +22,10 @@ if($_con === FALSE) {
     '{$senha}')";
 
     $result = mysqli_query($_con, $query);
+
     mysqli_close($_con);
+
+    header("Location: ../../html/forms/formRealizarLogin.html");
+	exit();
 }
 ?>
